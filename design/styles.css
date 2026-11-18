@@ -316,7 +316,7 @@ html.show-grid body::after {
 /* 30px hit area around a 12px visible dot */
 .slider-dot {
   box-sizing: border-box; width: 30px; height: 30px; margin: 0 -4px; padding: 9px; border-radius: 50%; border: 0;
-  background: var(--cream); background-clip: content-box; cursor: pointer;
+  background: var(--card); background-clip: content-box; cursor: pointer;
   transition: background-color 0.18s, transform 0.18s;
 }
 .slider-dot:hover { transform: scale(1.2); }
