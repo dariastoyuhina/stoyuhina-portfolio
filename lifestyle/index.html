@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Даша Стоюхина — прототип</title>
+    <meta name="description" content="Черно-белый варфрейм портфолио" />
+    <link rel="stylesheet" href="./styles.css?v=8" />
+  </head>
+  <body data-theme="lifestyle">
+    <header class="site-header">
+      <div class="header-inner">
+        <nav class="nav nav--left" aria-label="Основная">
+          <a class="nav-pill" href="#cases" data-i18n="nav.cases">Кейсы</a>
+          <a class="nav-pill" href="#comms" data-i18n="nav.comms">Коммуникации</a>
+          <a class="nav-pill" href="#about" data-i18n="nav.about">Обо мне</a>
+        </nav>
+
+        <a class="brand" href="#top">Dasha Stoyukhina</a>
+
+        <div class="nav nav--right">
+          <a class="nav-link" href="#contact" data-i18n="nav.contact">Контакты</a>
+          <div class="lang" role="group" aria-label="Language">
+            <button class="lang-btn is-active" type="button" data-lang="ru" aria-pressed="true">
+              RU
+            </button>
+            <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero__bg" aria-hidden="true"></div>
+        <div class="hero__stack">
+          <div class="hero__icon" aria-hidden="true">
+            <svg class="ph-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <rect x="6" y="12" width="36" height="26" rx="2" stroke="currentColor" stroke-width="2" />
+              <path d="M6 32l10-8 8 6 6-5 12 9" stroke="currentColor" stroke-width="2" fill="none" />
+              <circle cx="16" cy="20" r="3" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+          <h1 data-i18n="hero.name">Даша Стоюхина</h1>
+          <p class="hero__role" data-i18n="hero.role">
+            Senior UX/UI дизайнер<br />и Арт-директор
+          </p>
+          <p class="hero__lead" data-i18n="hero.lead">
+            Создаю и проектирую цифровые продукты на протяжении 6-ти лет. Работала с Яндексом, Сбером
+            и Уралсибом
+          </p>
+          <a
+            class="btn-primary"
+            href="https://t.me/dariasto"
+            target="_blank"
+            rel="noopener"
+            data-i18n="hero.cta"
+            >Написать в Telegram</a
+          >
+        </div>
+      </section>
+
+      <section class="section" id="cases">
+        <h2 class="section-title" data-i18n="cases.title">Кейсы</h2>
+        <div class="cases" data-cases></div>
+      </section>
+
+      <section class="section" id="comms">
+        <div class="comms-chaos" aria-label="Скрины">
+          <div class="ph ph--s1"><span>screen</span></div>
+          <div class="ph ph--s2"><span>screen</span></div>
+          <div class="ph ph--s3"><span>screen</span></div>
+          <div class="ph ph--s4"><span>screen</span></div>
+          <div class="ph ph--s5"><span>screen</span></div>
+          <div class="ph ph--s6"><span>screen</span></div>
+          <div class="ph ph--s7"><span>screen</span></div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <h3 class="section-title section-title--sm" data-i18n="about.traitsTitle">Какая я?</h3>
+        <p class="about-intro-text" data-i18n="about.intro">
+          Проектирую дизайн с учетом пользовательских потребностей и бизнес-целей команды. Веду
+          команду дизайнеров. Мои сильные стороны: креативный UI-дизайн и глубокая эмпатия, которая
+          помогает мне в проведении UX-исследований
+        </p>
+        <div class="traits" data-traits></div>
+
+        <div class="about-photo-wrap">
+          <div class="ph ph--about" aria-hidden="true">
+            <svg class="ph-icon ph-icon--lg" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <rect x="6" y="12" width="36" height="26" rx="2" stroke="currentColor" stroke-width="2" />
+              <path d="M6 32l10-8 8 6 6-5 12 9" stroke="currentColor" stroke-width="2" fill="none" />
+              <circle cx="16" cy="20" r="3" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </div>
+        </div>
+
+        <h3 class="section-title section-title--sm" data-i18n="about.cvTitle">Мой опыт</h3>
+        <div class="cv" data-cv></div>
+
+        <h3 class="section-title section-title--sm" data-i18n="about.achievementsTitle">
+          Достижения
+        </h3>
+        <div class="achievements" data-achievements></div>
+      </section>
+    </main>
+
+    <footer class="wire-footer" id="contact">
+      <div class="wire-footer__frame">
+        <p class="wire-footer__title" data-i18n="footer.gamification">геймификация</p>
+        <ul class="wire-footer__list" data-footer-contacts></ul>
+      </div>
+    </footer>
+
+    <script src="../shared/i18n.js?v=8"></script>
+    <script src="../shared/app.js?v=8"></script>
+  </body>
+</html>

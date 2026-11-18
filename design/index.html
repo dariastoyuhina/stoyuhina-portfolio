@@ -1,0 +1,151 @@
+﻿<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Даша Стоюхина | Senior UX/UI дизайнер и арт-директор</title>
+    <meta
+      name="description"
+      content="Портфолио Даши Стоюхиной: Senior UX/UI дизайнер и арт-директор. Цифровые продукты для Яндекса, Сбера и Уралсиба."
+    />
+    <meta name="theme-color" content="#e6c9cb" />
+    <link rel="stylesheet" href="./styles.css?v=48" />
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="ui.skip">Перейти к содержанию</a>
+
+    <header class="topbar" data-topbar>
+      <div class="topbar__inner">
+        <a class="logo" href="#top" aria-label="Даша Стоюхина">
+          <span class="logo__tile" data-icon-tile="heart"></span>
+          <span class="logo__name" data-i18n="brand">Даша Стоюхина</span>
+        </a>
+
+        <nav class="nav" id="site-nav" aria-label="Основная навигация" data-nav>
+          <a class="nav__link" href="#cases" data-nav-link="cases" data-i18n="nav.cases">Кейсы</a>
+          <a class="nav__link" href="#about" data-nav-link="about" data-i18n="nav.about">Обо мне</a>
+          <a class="nav__link" href="#experience" data-nav-link="experience" data-i18n="nav.experience">Опыт</a>
+          <a class="nav__link" href="#achievements" data-nav-link="awards" data-i18n="nav.awards">Награды</a>
+          <a class="nav__link" href="#contacts" data-nav-link="contacts" data-i18n="nav.contact">Контакты</a>
+        </nav>
+
+        <div class="topbar__actions">
+          <div class="lang" role="group" aria-label="Language">
+            <button type="button" class="lang__btn" data-lang="ru" aria-pressed="true">RU</button>
+            <button type="button" class="lang__btn" data-lang="en" aria-pressed="false">EN</button>
+          </div>
+          <a class="btn btn--primary btn--sm topbar__cta" href="#contacts">
+            <span data-i18n="hero.primary">Связаться</span>
+          </a>
+          <button
+            type="button"
+            class="burger"
+            aria-expanded="false"
+            aria-controls="site-nav"
+            aria-label="Меню"
+            data-burger
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- 1. First screen: the Figma frame "Идея 5", 100% of the viewport height -->
+      <section class="hero" id="top">
+        <div class="hero__plate">
+          <div class="hero__center">
+            <h1 class="hero__title" data-hero-title>
+              <span>я Даша Стоюхина</span>
+              <span>Senior UX/UI дизайнер</span>
+              <span>и арт-директор</span>
+            </h1>
+            <p class="hero__lead" data-hero-lead>
+              Создаю и проектирую цифровые продукты на протяжении 6-ти лет.<br />
+              Работала с Яндексом, Сбером и Уралсибом, проектирую дизайн<br />
+              с учетом пользовательских потребностей и целей команды
+            </p>
+          </div>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contacts" data-i18n="hero.primary">Связаться</a>
+            <a class="btn btn--rose" href="https://drive.google.com/file/d/1dtvG4lhvJIFnrT7dEGy3mPZM46ilcKvS/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-resume-link data-i18n="hero.secondary">Посмотреть резюме</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Cases -->
+      <section class="sec cases" id="cases" aria-labelledby="cases-title">
+        <div class="wrap">
+          <header class="sec-head">
+            <h2 class="sec-title" id="cases-title" data-i18n="cases.title">Кейсы</h2>
+          </header>
+          <div class="cases__list" data-cases></div>
+        </div>
+      </section>
+
+      <!-- 3. Communication design: quiet strip of screens (grey placeholders) -->
+      <section class="comms" id="comms" aria-label="Коммуникации" data-i18n-aria="nav.comms">
+        <div class="wrap">
+          <div class="comms__collage" data-comms></div>
+        </div>
+      </section>
+
+      <!-- 4. About -->
+      <section class="sec about" id="about" aria-labelledby="about-title">
+        <div class="wrap">
+          <div class="about__grid">
+            <header class="about__lead">
+              <h2 class="sec-title" id="about-title" data-i18n="about.traitsTitle">Какая я?</h2>
+              <p class="about__intro" data-i18n="about.intro"></p>
+            </header>
+            <div class="traits" data-traits></div>
+          </div>
+          <div class="about__sim" data-sim aria-label="симулятор дизайнера"></div>
+        </div>
+      </section>
+
+      <!-- 5. Experience + achievements -->
+      <section class="sec career" id="experience" aria-labelledby="cv-title">
+        <div class="wrap">
+          <header class="sec-head">
+            <h2 class="sec-title" id="cv-title" data-i18n="about.cvTitle">Мой опыт</h2>
+          </header>
+          <div class="cv" data-cv></div>
+
+          <div class="achievements" id="achievements" aria-labelledby="ach-title">
+            <header class="sec-head">
+              <h2 class="sec-title" id="ach-title" data-i18n="about.achievementsTitle">Достижения</h2>
+            </header>
+            <div class="ach" data-achievements></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div class="footer__plate">
+        <div class="footer__pixels" aria-hidden="true"></div>
+        <div class="wrap">
+          <header class="sec-head">
+            <h2 class="sec-title" data-footer-title>Мои контакты</h2>
+          </header>
+          <div class="footer__board">
+            <div class="footer__hello">
+              <span class="footer__bubble" data-contacts-bubble></span>
+              <span class="footer__cat" data-cat-sprite></span>
+              <span class="footer__dasha" data-dasha-sprite></span>
+            </div>
+            <ul class="contacts" data-contacts></ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../shared/i18n.js?v=4"></script>
+    <script src="./i18n-extra.js?v=8"></script>
+    <script src="./icons.js?v=5"></script>
+    <script src="./sim.js?v=5"></script>
+    <script src="./app.js?v=31"></script>
+  </body>
+</html>

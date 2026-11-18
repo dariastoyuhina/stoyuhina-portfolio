@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Даша Стоюхина — Senior UX/UI · Games</title>
+    <meta
+      name="description"
+      content="Senior UX/UI дизайнер и арт-директор. Игры, геймификация и продуктовый дизайн."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-theme="gaming">
+    <canvas id="fx" aria-hidden="true"></canvas>
+    <div class="scanlines" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Основная">
+        <a class="nav-link" href="#cases" data-i18n="nav.cases">Кейсы</a>
+        <a class="nav-link" href="#comms" data-i18n="nav.comms">Коммуникации</a>
+        <a class="brand" href="#top">
+          <span class="brand__pixel">◆</span> DASHA.EXE
+        </a>
+        <a class="nav-link" href="#about" data-i18n="nav.about">Обо мне</a>
+        <a class="nav-link" href="#contact" data-i18n="nav.contact">Контакты</a>
+      </nav>
+      <div class="header-tools">
+        <div class="hp" aria-hidden="true">
+          <span>HP</span>
+          <div class="hp__bar"><i></i></div>
+        </div>
+        <div class="lang" role="group" aria-label="Language">
+          <button class="lang-btn" type="button" data-lang="ru" aria-pressed="true">RU</button>
+          <button class="lang-btn" type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="version-link" href="../lifestyle/">Lifestyle →</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" data-reveal>
+        <div class="hero__window">
+          <div class="window-chrome">
+            <span></span><span></span><span></span>
+            <p>portfolio_v2.pixel</p>
+          </div>
+          <div class="hero__layout">
+            <div class="hero__photo-wrap">
+              <img
+                class="hero__photo"
+                src="../assets/photos/dasha-red.jpg"
+                alt="Даша Стоюхина"
+                width="420"
+                height="520"
+              />
+              <div class="pixel-badge">LVL 6</div>
+            </div>
+            <div class="hero__copy">
+              <p class="eyebrow" data-i18n="hero.role">Senior UX/UI дизайнер и арт-директор</p>
+              <h1 data-i18n="hero.name">Даша Стоюхина</h1>
+              <p class="hero__lead" data-i18n="hero.lead">
+                Создаю и проектирую цифровые продукты 6 лет.
+              </p>
+              <div class="chips" data-chips></div>
+              <a
+                class="btn-primary"
+                href="https://t.me/varimur_design"
+                target="_blank"
+                rel="noopener"
+                data-i18n="hero.cta"
+                >Написать в Telegram</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cases-section" id="cases" data-reveal>
+        <div class="section-head">
+          <p class="pixel-label">SELECT STAGE</p>
+          <h2 data-i18n="cases.title">Кейсы</h2>
+        </div>
+        <div class="cases" data-cases></div>
+      </section>
+
+      <section class="section comms-section" id="comms" data-reveal>
+        <div class="section-head">
+          <p class="pixel-label">INVENTORY</p>
+          <h2 data-i18n="comms.title">Коммуникационный дизайн</h2>
+          <p data-i18n="comms.subtitle">
+            Скрины, айдентика и визуальные системы для продуктов и кампаний
+          </p>
+        </div>
+        <div class="comms-grid">
+          <figure class="comms-card comms-card--wide">
+            <img src="../assets/photos/palette-cardigan.png" alt="Soft game palette" />
+            <figcaption>Soft game · knit palette</figcaption>
+          </figure>
+          <figure class="comms-card">
+            <div class="pixel-frame">
+              <div class="pixel-bunny" aria-hidden="true"></div>
+              <strong>Sprite set</strong>
+            </div>
+            <figcaption>Character / icons</figcaption>
+          </figure>
+          <figure class="comms-card">
+            <div class="comms-placeholder comms-placeholder--a">
+              <span>HUD</span>
+              <strong>UI pack</strong>
+            </div>
+            <figcaption>Game HUD language</figcaption>
+          </figure>
+          <figure class="comms-card">
+            <img src="../assets/photos/fish.jpg" alt="Motion mood" />
+            <figcaption>Motion mood</figcaption>
+          </figure>
+          <figure class="comms-card">
+            <div class="comms-placeholder comms-placeholder--b">
+              <span>Promo</span>
+              <strong>Key art</strong>
+            </div>
+            <figcaption>Promo frames</figcaption>
+          </figure>
+          <figure class="comms-card">
+            <img src="../assets/photos/dasha-coast.jpg" alt="Lifestyle still" />
+            <figcaption>Lifestyle still</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" data-reveal>
+        <div class="about-intro">
+          <div class="about-photos">
+            <img
+              class="about-photos__main"
+              src="../assets/photos/dasha-hero.png"
+              alt="Даша Стоюхина"
+            />
+            <img
+              class="about-photos__side"
+              src="../assets/photos/dasha-ribbons.jpg"
+              alt="Портрет"
+            />
+          </div>
+          <div class="about-copy">
+            <p class="pixel-label">PLAYER BIO</p>
+            <h2 data-i18n="about.title">Обо мне</h2>
+            <p data-i18n="about.intro">
+              Я проектирую продукты, которые ощущаются тёплыми и понятными.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="subhead" data-i18n="about.traitsTitle">Какая я</h3>
+        <div class="traits" data-traits></div>
+
+        <h3 class="subhead" data-i18n="about.cvTitle">Опыт</h3>
+        <div class="cv" data-cv></div>
+      </section>
+    </main>
+
+    <footer class="micro-footer" id="contact">
+      <div class="micro-footer__left">
+        <a href="https://t.me/varimur_design" target="_blank" rel="noopener" data-i18n="footer.telegram"
+          >Telegram</a
+        >
+        <a href="https://t.me/varimur_design" target="_blank" rel="noopener" data-i18n="footer.blog"
+          >Блог</a
+        >
+        <a href="../lifestyle/" data-i18n="footer.versions">Другая версия</a>
+      </div>
+      <p><span data-i18n="footer.made">Портфолио · прототип 2026</span> · <span data-year></span></p>
+    </footer>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+        }
+      }
+    </script>
+    <script type="module" src="./three-scene.js"></script>
+    <script src="../shared/i18n.js"></script>
+    <script src="../shared/cursor.js"></script>
+    <script src="../shared/app.js"></script>
+  </body>
+</html>
