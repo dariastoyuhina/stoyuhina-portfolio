@@ -451,7 +451,7 @@ mark.metric { background: var(--rose); color: var(--ink); padding: 0 5px; border
 .footer__cat { width: 54px; flex: none; transform: scaleX(-1); }
 /* chat-style speech bubble at her head, the tail points down-right to her */
 .footer__bubble {
-  position: absolute; right: 78px; bottom: 58px; z-index: 1; white-space: nowrap;
+  position: absolute; right: 92px; bottom: 58px; z-index: 1; white-space: nowrap;
   padding: 12px 20px; border-radius: 22px 22px 4px 22px; background: var(--card);
   box-shadow: 0 8px 20px rgba(82, 22, 23, 0.08);
   font: 700 var(--fs-4)/var(--lh) var(--sans);
