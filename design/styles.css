@@ -367,7 +367,7 @@ html[lang="en"] .case__title { max-width: 15em; }
 .traits { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); }
 .trait {
   display: grid; align-content: start; gap: var(--space-1);
-  padding: var(--space-2); border-radius: var(--radius); background: var(--card); box-shadow: var(--card-line);
+  padding: var(--space-2); border-radius: var(--radius); background: var(--card); box-shadow: var(--card-blur);
   transition: transform 0.3s var(--ease);
 }
 .trait:hover { transform: translateY(-4px); }
@@ -469,7 +469,8 @@ mark.metric { background: var(--rose); color: var(--ink); padding: 0 5px; border
 .contact {
   position: relative; display: flex; flex-direction: column; justify-content: flex-start; gap: 10px;
   height: 100%; min-height: 160px; padding: var(--space-2);
-  border-radius: var(--radius-lg); background: rgba(255, 255, 255, 0.5); box-shadow: var(--card-line);
+  border-radius: var(--radius-lg); background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.5), 0 0 8px 3px rgba(255, 255, 255, 0.45), 0 0 16px 6px rgba(255, 255, 255, 0.3);
   text-decoration: none; transition: transform 0.3s var(--ease);
 }
 .contact:hover { transform: translateY(-4px); }
