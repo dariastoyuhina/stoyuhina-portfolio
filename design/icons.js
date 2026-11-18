@@ -140,13 +140,14 @@
       ".XXXXXX.",
     ],
     link: [
-      ".X......",
+      "XX......",
+      "XX......",
       "........",
-      ".X.XXX..",
-      ".X.X..X.",
-      ".X.X..X.",
-      ".X.X..X.",
-      ".X.X..X.",
+      "XXXXXXXX",
+      "XX....XX",
+      "XX....XX",
+      "XX....XX",
+      "XX....XX",
     ],
     /* outlined chevron from the reference */
     arrow: [

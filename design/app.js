@@ -321,10 +321,12 @@
     $("[data-contacts-bubble]").textContent = typo(t.bubble);
     $("[data-contacts]").innerHTML = t.items.map(function (c) {
       var ext = /^https?:/.test(c.href) ? ' target="_blank" rel="noopener"' : "";
+      var icon = c.icon && PI ? PI.glyph(c.icon) : "";
       return (
         '<li><a class="contact" href="' + esc(c.href) + '"' + ext + ">" +
         '<span class="contact__kind">' + esc(c.kind) + "</span>" +
         '<span class="contact__val">' + esc(c.value) + "</span>" +
+        (icon ? '<span class="contact__icon" aria-hidden="true">' + icon + "</span>" : "") +
         "</a></li>"
       );
     }).join("");
