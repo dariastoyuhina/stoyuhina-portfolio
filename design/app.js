@@ -316,12 +316,25 @@
   }
 
   /* ---------------- contacts (footer) ---------------- */
+  var CONTACT_ICONS = {
+    mail: '<rect x="3" y="5.5" width="18" height="13" rx="2.5"/><path d="M4 7.5l8 6 8-6"/>',
+    search: '<circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/>',
+    phone: '<path d="M6.5 3.5h3l1.5 4-2 1.5a11 11 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/>',
+    smile: '<circle cx="12" cy="12" r="8.5"/><path d="M8.5 14a4.5 4.5 0 0 0 7 0"/><path d="M9 9.5v.5M15 9.5v.5"/>',
+    owl: '<path d="M5 9.5L6.5 4l3.5 3h4l3.5-3L19 9.5V14a7 7 0 0 1-14 0z"/><circle cx="9.5" cy="11.5" r="2"/><circle cx="14.5" cy="11.5" r="2"/><path d="M11 15l1 1.5 1-1.5"/>',
+    camera: '<path d="M3.5 8.5a2 2 0 0 1 2-2h2l1.5-2h6l1.5 2h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/><circle cx="12" cy="13" r="3.5"/>',
+  };
+  function contactIcon(name) {
+    var body = CONTACT_ICONS[name];
+    if (!body) return "";
+    return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">' + body + "</svg>";
+  }
   function renderContacts() {
     var t = T().contacts;
     $("[data-contacts-bubble]").textContent = typo(t.bubble);
     $("[data-contacts]").innerHTML = t.items.map(function (c) {
       var ext = /^https?:/.test(c.href) ? ' target="_blank" rel="noopener"' : "";
-      var icon = c.icon && PI ? PI.glyph(c.icon) : "";
+      var icon = contactIcon(c.icon);
       return (
         '<li><a class="contact" href="' + esc(c.href) + '"' + ext + ">" +
         '<span class="contact__kind">' + esc(c.kind) + "</span>" +

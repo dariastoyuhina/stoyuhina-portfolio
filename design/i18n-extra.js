@@ -69,10 +69,10 @@
     bubble: "Буду рада знакомству с вами!",
     items: [
       { kind: "Email", value: "dariastoyuhina@gmail.com", href: "mailto:dariastoyuhina@gmail.com", icon: "mail" },
-      { kind: "LinkedIn", value: "linkedin.com/in/varimur-design", href: "https://www.linkedin.com/in/varimur-design", icon: "link" },
+      { kind: "LinkedIn", value: "linkedin.com/in/varimur-design", href: "https://www.linkedin.com/in/varimur-design", icon: "search" },
       { kind: "Телефон", value: "+374 41 240699", href: "tel:+37441240699", icon: "phone" },
-      { kind: "Telegram личный", value: "t.me/dariasto", href: "https://t.me/dariasto", icon: "plane" },
-      { kind: "Telegram блог", value: "t.me/varimur_design", href: "https://t.me/varimur_design", icon: "plane" },
+      { kind: "Telegram личный", value: "t.me/dariasto", href: "https://t.me/dariasto", icon: "smile" },
+      { kind: "Telegram блог", value: "t.me/varimur_design", href: "https://t.me/varimur_design", icon: "owl" },
       { kind: "Instagram блог", value: "instagram.com/varimur_design", href: "https://www.instagram.com/varimur_design/", icon: "camera" },
     ],
   };
@@ -142,10 +142,10 @@
     bubble: "Happy to meet you!",
     items: [
       { kind: "Email", value: "dariastoyuhina@gmail.com", href: "mailto:dariastoyuhina@gmail.com", icon: "mail" },
-      { kind: "LinkedIn", value: "linkedin.com/in/varimur-design", href: "https://www.linkedin.com/in/varimur-design", icon: "link" },
+      { kind: "LinkedIn", value: "linkedin.com/in/varimur-design", href: "https://www.linkedin.com/in/varimur-design", icon: "search" },
       { kind: "Phone", value: "+374 41 240699", href: "tel:+37441240699", icon: "phone" },
-      { kind: "Telegram personal", value: "t.me/dariasto", href: "https://t.me/dariasto", icon: "plane" },
-      { kind: "Telegram blog", value: "t.me/varimur_design", href: "https://t.me/varimur_design", icon: "plane" },
+      { kind: "Telegram personal", value: "t.me/dariasto", href: "https://t.me/dariasto", icon: "smile" },
+      { kind: "Telegram blog", value: "t.me/varimur_design", href: "https://t.me/varimur_design", icon: "owl" },
       { kind: "Instagram blog", value: "instagram.com/varimur_design", href: "https://www.instagram.com/varimur_design/", icon: "camera" },
     ],
   };
