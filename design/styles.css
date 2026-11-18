@@ -434,11 +434,13 @@ mark.metric { background: var(--rose); color: var(--ink); padding: 0 5px; border
 }
 .footer__plate {
   background: var(--rose-soft);
+  padding-top: var(--block);
   padding-bottom: var(--block);
+  /* side + bottom blur only — no pink halo above the hearts strip */
   box-shadow:
-    0 0 0 1px var(--rose-soft),
-    0 0 8px 3px var(--rose-soft),
-    0 0 16px 6px rgba(248, 228, 232, 0.65);
+    -12px 0 16px -6px var(--rose-soft),
+    12px 0 16px -6px var(--rose-soft),
+    0 12px 18px 4px rgba(248, 228, 232, 0.65);
 }
 /* Dasha + cat stand on the top edge of the top-right contact card */
 .footer__board { position: relative; }
@@ -457,7 +459,7 @@ mark.metric { background: var(--rose); color: var(--ink); padding: 0 5px; border
   border-right: 14px solid var(--card); border-bottom: 10px solid transparent;
 }
 .footer__pixels {
-  position: relative; height: 52px; margin: 0 calc(-1 * var(--frame)) var(--block); background-color: var(--tile);
+  position: relative; z-index: 1; height: 52px; margin: 0 calc(-1 * var(--frame)); background-color: var(--tile);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='26' viewBox='0 0 24 13' shape-rendering='crispEdges'%3E%3Cpath fill='%23e6c9cb' d='M8 3h1v1h-1zM9 3h1v1h-1zM12 3h1v1h-1zM13 3h1v1h-1zM7 4h8v3H7zM8 7h6v1H8zM9 8h4v1H9zM10 9h2v1h-2z'/%3E%3C/svg%3E");
   background-size: 96px 52px; background-repeat: repeat-x; animation: marquee 9s linear infinite;
 }
